@@ -10,6 +10,10 @@ import (
 	"github.com/flosch/pongo2"
 )
 
+func init() {
+	pongo2.RegisterFilter("addquote", filterAddquote)
+}
+
 // JSONReportRunner initilization should contain any variables used for report
 type JSONReportRunner struct{}
 
