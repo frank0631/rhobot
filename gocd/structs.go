@@ -54,7 +54,7 @@ type Pipeline struct {
 		Jobs                 []struct {
 			Name                 string                 `json:"name"`
 			RunInstanceCount     interface{}            `json:"run_instance_count"`
-			Timeout              int                    `json:"timeout"`
+			Timeout              string                 `json:"timeout"`
 			EnvironmentVariables []EnvironmentVariables `json:"environment_variables"`
 			Resources            []interface{}          `json:"resources"`
 			Tasks                []struct {
